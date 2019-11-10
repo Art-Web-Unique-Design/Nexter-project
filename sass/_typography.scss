@@ -1,0 +1,28 @@
+%heading{
+	font-family: $font-display;
+	font-weight: 400;
+}
+
+//will be created a selectors for each of the below headings class witch will have %heading code
+//as example: .heading-1, .heading-2, .heading-3, .heading-4
+.heading-1{
+	@extend %heading;
+}
+
+.heading-2{
+	@extend %heading;
+}
+
+.heading-3{
+	@extend %heading;
+}
+
+.heading-4{
+	@extend %heading;
+	font-size: 1.9rem;
+
+//modifiers for our heading-4
+	&--light { color: $color-grey-light-1; }
+	&--dark { color: $color-grey-dark-1; }
+
+}
