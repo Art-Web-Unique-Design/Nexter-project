@@ -3,7 +3,7 @@
 	font-weight: 400;
 }
 
-//will be created a selectors for each of the below headings class witch will have %heading code
+//will be created a selectors for each of the below headings class witch will contain %heading code
 //as example: .heading-1, .heading-2, .heading-3, .heading-4
 .heading-1{
 	@extend %heading;
@@ -11,10 +11,19 @@
 
 .heading-2{
 	@extend %heading;
+	font-size: 4rem;
+	font-style: italic;
+	line-height: 1;
+
+	&--light { color: $color-grey-light-1; }
+	&--dark { color: $color-grey-dark-1; }
 }
 
 .heading-3{
 	@extend %heading;
+	font-size: 1.6rem;
+	color: $color-primary;
+	text-transform: uppercase;
 }
 
 .heading-4{
@@ -24,5 +33,27 @@
 //modifiers for our heading-4
 	&--light { color: $color-grey-light-1; }
 	&--dark { color: $color-grey-dark-1; }
-
 }
+
+.btn{
+	background-color: $color-primary;
+	color: #fff;
+	border: none;
+	border-radius: 0;
+	font-family: $font-display;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	padding: 1.8rem 3rem;
+	cursor: pointer;
+	transition: all .2s;
+
+	&:hover{
+		background-color: $color-primary-dark;
+	}
+}
+
+
+.mb-sm { margin-bottom: 2rem; }
+.mb-md { margin-bottom: 3rem; }
+.mb-lg { margin-bottom: 4rem; }
+.mb-hg { margin-bottom: 8rem; }
