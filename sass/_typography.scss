@@ -7,6 +7,9 @@
 //as example: .heading-1, .heading-2, .heading-3, .heading-4
 .heading-1{
 	@extend %heading;
+	font-size: 4.5rem;
+	color: $color-grey-light-1;
+	line-height: 1;
 }
 
 .heading-2{
